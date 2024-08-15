@@ -81,23 +81,17 @@ body {
   align-items: center;
 }
 
+.banner-text h1 {
+  font-size: 2.5em;
+  margin: 0;
+  margin-bottom: 20px; /* Asegúrate de que este estilo esté aplicado */
+}
+
 .banner-logo {
   height: 250px;
   width: auto;
   margin-bottom: 0;
 }
-
-.banner h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-.slogan {
-  font-size: 1.5em;
-  margin: 10px 0 0 0;
-}
-
-/*Boton compra ya */
 
 .btn {
   padding: 1.1em 2em;
@@ -114,9 +108,9 @@ body {
   background-color: #48e4ec;
   font-weight: bolder;
   box-shadow: 0 2px 0 2px #000;
- }
- 
- .btn:before {
+}
+
+.btn:before {
   content: "";
   position: absolute;
   width: 100px;
@@ -125,44 +119,43 @@ body {
   top: 50%;
   transform: skewX(30deg) translate(-150%, -50%);
   transition: all 0.5s;
- }
- 
- .btn:hover {
+}
+
+.btn:hover {
   background-color: #f0994c;
   color: #fff;
   box-shadow: 0 2px 0 2px #0d3b66;
- }
- 
- .btn:hover::before {
+}
+
+.btn:hover::before {
   transform: skewX(30deg) translate(150%, -50%);
   transition-delay: 0.1s;
- }
- 
- .btn:active {
-  transform: scale(0.9);
- }
+}
 
- /*pagina producto*/
- h2.tituloproducto{
+.btn:active {
+  transform: scale(0.9);
+}
+
+/*pagina producto*/
+h2.tituloproducto {
   text-align: center;
   font-size: 75px;
   color: #e75757;
   text-shadow: -3px 4px #000;
- }
- .tiendacontenedor{
-  background-color: #26355d;
+}
+.tiendacontenedor {
+  background-color: #af47d2;
   margin-top: 5%;
   padding-top: 5%;
- }
+}
 
- /* Estilo de tarjetas de productos*/
- .title-Tienda {
+/* Estilo de tarjetas de productos*/
+.title-Tienda {
   width: 80%;
   margin: 0 auto;
   color: whitesmoke;
   text-align: center;
 }
-
 
 h2 {
   color: #fff;
@@ -176,13 +169,13 @@ h2 {
 
 /**Diseño para productos**/
 
-.allitems{
- align-items: center;
- text-align: center;
+.allitems {
+  align-items: center;
+  text-align: center;
 }
-.producto{
+.producto {
   display: inline-block;
-  margin: 1%;    
+  margin: 1%;
 }
 .card-Tienda {
   position: relative;
@@ -190,7 +183,7 @@ h2 {
   height: 16.5em;
   margin-left: 0%;
   margin-top: 10%;
-  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 120ms;
   display: flex;
@@ -202,14 +195,14 @@ h2 {
 }
 
 .card-Tienda::after {
-  content: "Lo Quiero!";
+  content: "¡Lo quiero!";
   padding-top: 1.25em;
   position: absolute;
   left: 0;
   bottom: -60px;
   background: #0008ff;
   color: #ffffff;
-  height: 3.0em;
+  height: 3em;
   width: 100%;
   transition: all 80ms;
   font-weight: 600;
@@ -219,7 +212,7 @@ h2 {
 }
 
 .card-Tienda .title-producto {
-  font-family:sans-serif ;
+  font-family: sans-serif;
   font-size: 0.9em;
   position: absolute;
   left: 0.625em;
@@ -229,7 +222,7 @@ h2 {
 }
 
 .card-Tienda .price {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1em;
   position: absolute;
   left: 0.625em;
@@ -260,4 +253,52 @@ h2 {
   width: 100%;
   height: 100%;
   place-items: flex;
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #26355d;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #e75757;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff8f00;
+}
+
+.footer-info {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.footer-info p {
+  margin: 0;
 }
