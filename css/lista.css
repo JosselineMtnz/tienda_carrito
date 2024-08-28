@@ -1,0 +1,40 @@
+/* Estilos generales */
+body {
+  font-family: "Chewy", system-ui;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#cart-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-items-container {
+  margin-top: 20px;
+}
+
+.cart-item {
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}

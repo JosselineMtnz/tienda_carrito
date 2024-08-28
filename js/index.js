@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartIcon = document.getElementById("cart-icon"); // Asegúrate de que el icono del carrito tenga este ID
   const cartItemsContainer = document.getElementById("cart-items"); // Contenedor del carrito
   let cartCount = 0;
+  let total = 0;
 
   // Chequea si hay un valor previo del carrito guardado en localStorage
   if (localStorage.getItem("cartCount")) {
