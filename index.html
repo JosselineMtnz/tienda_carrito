@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="./js/index.js"></script>
+    <script src="./js/carritoService.js"></script>
     <title>Inicio</title>
   </head>
   <body>
@@ -21,22 +22,15 @@
         <a href="./index.html"
           ><img src="./img/Logo.jpg" alt="Logo de la Empresa"
         /></a>
-      </div>
+      </div>   
       <ul class="nav-list">
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/lista.html">Mi lista</a></li>
-        <li>
-          <a class="carrito-compras" href="./pages/lista.html"
-            ><img
-              src="./img/icon/shopping-cart-v.gif"
-              alt="carrito"
-              height="70px"
-              width="65px"
-            /><span id="cuenta">0</span></a
-          >
-        </li>
+        <li><a class="carrito-compras"><img src="./img/icon/shopping-cart-v.gif" alt="carrito" height="80px" width="75px"><span id="cuenta">0</span></a></li>
       </ul>
+      </div>
+      </div>
+
     </nav>
 
     <!-- Banner -->
@@ -51,40 +45,9 @@
           class="banner-logo"
         />
         <h1>¡El único con las tres B!</h1>
-        <a class="btn" href="./pages/productos.html"> Compra ya! </a>
+        <a class="btn" href="./pages/productos.html"> Compra ya!
+        </a>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- Información de contacto -->
-        <div class="footer-section contact">
-          <h3>Contacto</h3>
-          <p>
-            Dirección: El Salvador
-          </p>
-          <p>
-            Teléfono: +503 70707070
-          </p>
-          <p>
-            Email: elsuper@empresa.com
-          </p>
-        </div>
-
-        <!-- Enlaces rápidos -->
-        <div class="footer-section links">
-          <h3>Enlaces Rápidos</h3>
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/lista.html">Mi lista</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2024 El Super. Todos los derechos reservados.</p>
-        </div>     
-    </footer>
   </body>
 </html>
