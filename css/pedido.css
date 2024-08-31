@@ -1,0 +1,257 @@
+/** Diseño para el apartado pedido*/
+
+div.Titulo{
+    background-color: #fccb6f;
+    background-image: url(../img/fondo4.jpeg);
+    background-size:30%;
+    background-position:left;
+    background-repeat:no-repeat;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #e75757;
+    text-shadow: -3px 4px #000;
+    padding: 1%;
+  }
+
+div.Titulo2{
+    text-align: center;
+    font-size: 35px;
+    color: #01004b;
+    text-shadow: -3px 4px #e75757;
+    margin-bottom: -5%;
+}
+
+/** Diseño para la Tabla de Detalle Pedido**/
+.tablapedido{
+    background-color: rgba(248, 237, 202, 0.653);
+    padding-top: 10%;
+    width: 80%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.566);
+    margin: auto; 
+    border: 3px solid #000000
+}
+th{
+    font-size: 25px;
+    padding-top:  2%;
+    border: 2px solid #110f0f00
+}
+th.producto{
+    text-align: center;
+}
+th.precioUni{
+    text-align: left;
+}
+td.foto{
+    text-align: center;
+    padding-top: 2%;
+
+}
+img.foto{
+    align-content: center;
+    width: 100px; 
+    height: auto;
+}
+td.producto{
+    text-align:center;
+}
+td.unitario{
+    text-align:start;
+}
+td.total{
+    text-align:end;
+}
+
+td.adde{
+    text-align: center;
+    width: 175px;
+    height: auto;
+}
+td{
+    font-size: 25px;
+    border: 2px solid #110f0f00
+}
+
+/**Diseño botones + - **/
+
+
+button.menos{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px; 
+    border-radius: 10%; 
+    background-color: #ff4a13;
+    color: #fff;
+    border: none;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.menos:hover {
+    background-color: #ff0000;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+button.mas{
+    width: 20px;
+    height: 20px; 
+    margin-left: 20px;
+    border-radius: 10%; 
+    background-color: #47b8ff;
+    color: #fff;
+    border: none;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.mas:hover {
+    background-color: #0044ff;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    margin-left: 15px;
+}
+td.Eliminar{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+button.Eliminar{
+ width: 100px;
+ height: auto;
+ background-color: #f78383;
+ padding: 1%;
+ display: inline-block;
+ font-size: 25px;
+ font-weight: 600;
+}
+button.Eliminar:hover{
+    background-color: #f94545;
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    
+}
+img.borrar{
+    width: 25px;
+    height: auto;
+    display:inline;
+}
+
+
+/**Bortón para compra**/
+div.compra{
+    text-align: end;
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
+button.compra{
+    background: #00ff1a;
+    border: solid 3px #000;
+    border-radius:15px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    width: 170px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(0deg);
+    font-family: "Chewy", system-ui;
+    text-shadow: -1.75px 1px #e75757;
+}span.compra {
+    display: inline-block;
+    transform: skew(0deg);
+  }
+  
+  button.compra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(0, 55, 255);
+    border-radius:12px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.6s;
+  }
+  
+  button.compra:hover {
+    color: #fff;
+    text-shadow: -1.75px 1px #e75757;
+  }
+  
+  button.compra:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  img.compra{
+    width: 50px;
+    height: 45px;
+    display:inline;
+  }
+
+  /**BOTON ELIMINAR COMPRA**/
+
+button.Eliminarcompra{
+    background: #f99136;
+    border: solid 3px #000;
+    border-radius:15px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    width: 170px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(0deg);
+    font-family: "Chewy", system-ui;
+    text-shadow: -1.75px 1px #e75757;
+}span.Eliminarcompra {
+    display: inline-block;
+    transform: skew(0deg);
+  }
+  
+  button.Eliminarcompra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    background: rgb(255, 0, 0);
+    border-radius:12px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.6s;
+  }
+  
+  button.Eliminarcompra:hover {
+    color: #fff;
+    text-shadow: -1.75px 1px #e75757;
+  }
+  
+  button.Eliminarcompra:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  img.Eliminarcompra{
+    width: 50px;
+    height: 45px;
+    display:inline;
+  }

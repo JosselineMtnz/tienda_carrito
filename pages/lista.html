@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <link rel="stylesheet" type="text/css" href="../css/lista.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pedido.css">
     <link rel="shortcut icon" href="../img/Logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,13 @@
       rel="stylesheet"
     />
     <script src="../js/index.js"></script>
+    <script src="../js/carritoService.js"></script>
+    <script src="../js/Mipedido.js"></script>
+    <script src="../js/control.js"></script>
+    <script src="../js/PedidoAccion.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <title>Inicio</title>
   </head>
   <body>
@@ -22,63 +29,85 @@
         <a href="../index.html"
           ><img src="../img/Logo.jpg" alt="Logo de la Empresa"
         /></a>
-      </div>
+      </div>   
       <ul class="nav-list">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../pages/productos.html">Productos</a></li>
-        <li><a href="../pages/lista.html">Mi lista</a></li>
-        <li>
-          <a class="carrito-compras" href="../pages/lista.html"
-            ><img
-              src="../img/icon/shopping-cart-v.gif"
-              alt="carrito"
-              height="70px"
-              width="65px"
-            /><span id="cuenta">0</span></a
-          >
-        </li>
+        <li><a href="../pages/lista.html" id="enlace-lista" class="carrito-compras"><img src="../img/icon/shopping-cart-v.gif" alt="carrito" height="80px" width="75px"><span id="cuenta">0</span></a></li>
       </ul>
-    </nav>
-
-    <div id="cart-container">
-      <h1>Tu lista</h1>
-      <div id="cart-items" class="cart-items-container">
-          <!-- Los elementos del carrito se mostrarán aquí -->
       </div>
+      </div>
+    </nav>
+    <div class="Titulo">
+      <h2>Mis pedidos</h2>
+    </div>
+    <div class="allPedido">
+
+    <div class="Titulo2">
+      <h3>Detalle Pedido</h3>
+    </div>
+    <div class="compra">
+      <button class="compra"><span class="compra">Comprar!<img src="../img/icon/cart.png" class="compra"></span></button>
+      <button class="Eliminarcompra"><span class="Eliminarcompra">Eliminar<img src="../img/icon/borrar.png" class="Eliminarcompra"></span></button>
+    </div>
+    
+  <table id="tabla-pedidos"  class="tablapedido">
+    <thead>
+        <tr>
+            <th class="producto">Producto</th>
+            <th class="nombre">Nombre</th>
+            <th class="precioUni">Precio Unitario</th>
+            <th class="cantidad">Cantidad</th>
+            <th class="precio">Precio Total</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody id="contenedor-pedidos">
+        <!-- Aquí se cargarán los pedidos dinámicamente -->
+    </tbody>
+  </table>
   </div>
 
-  <!-- Incluye tu script JavaScript -->
-  <script src="../js/lista.js"></script>
-  </body>
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Información de contacto -->
-          <div class="footer-section contact">
-            <h3>Contacto</h3>
-            <p>
-              Dirección: El Salvador
-            </p>
-            <p>
-              Teléfono: +503 70707070
-            </p>
-            <p>
-              Email: elsuper@empresa.com
-            </p>
-          </div>
-  
-          <!-- Enlaces rápidos -->
-          <div class="footer-section links">
-            <h3>Enlaces Rápidos</h3>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/productos.html">Productos</a></li>
-              <li><a href="../pages/lista.html">Mi lista</a></li>
+
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>Ofrecemos una amplia variedad de productos frescos y de alta calidad. ¡Visítanos y comprueba nuestra excelente atención al cliente!</p>
+            <ul class="footer-links">
+                <li><a href="/about.html">Quiénes Somos</a></li>
+                <li><a href="/careers.html">Trabaja con Nosotros</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
             </ul>
-          </div>
-  
-          <div class="footer-bottom">
-            <p>&copy; 2024 El Super. Todos los derechos reservados.</p>
-          </div>     
-      </footer>
+        </div>
+        <div class="footer-section">
+            <h3>Servicios</h3>
+            <ul class="footer-links">
+                <li><a href="#">Entrega a Domicilio</a></li>
+                <li><a href="#"">Devoluciones</a></li>
+                <li><a href="#">Programa de Fidelidad</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Redes Sociales</h3>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="../img/icon/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="../img/icon/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="../img/icon/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Información de Contacto</h3>
+            <p><strong>Dirección:</strong> Calle Avenida Don Bosco, Ciudad Delgado</p>
+            <p><strong>Teléfono:</strong> (111) 2222-3333</p>
+            <p><strong>Email:</strong> udbmercado@supermercado.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Supermercado. Todos los derechos reservados.</p>
+    </div>
+</footer>
+  </body>
 </html>
