@@ -45,18 +45,18 @@ body {
   padding: 14px 40px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  font-size: 25px;  
+  font-size: 25px;
 }
 
 .nav-list a:hover {
   background-color: #e75757;
   cursor: pointer;
 }
-.nav-list a.carrito-compras{
+.nav-list a.carrito-compras {
   background-color: transparent;
   pointer-events: painted;
 }
-#cuenta{
+#cuenta {
   background-color: #e75757;
   border-radius: 100%;
   display: inline-block;
@@ -66,7 +66,6 @@ body {
   text-align: center;
   position: absolute;
 }
-
 
 /* Estilos para el banner */
 .banner {
@@ -131,9 +130,9 @@ body {
   background-color: #48e4ec;
   font-weight: bolder;
   box-shadow: 0 2px 0 2px #000;
- }
- 
- .btn:before {
+}
+
+.btn:before {
   content: "";
   position: absolute;
   width: 100px;
@@ -142,26 +141,25 @@ body {
   top: 50%;
   transform: skewX(30deg) translate(-150%, -50%);
   transition: all 0.5s;
- }
- 
- .btn:hover {
+}
+
+.btn:hover {
   background-color: #f0994c;
   color: #fff;
   box-shadow: 0 2px 0 2px #0d3b66;
- }
- 
- .btn:hover::before {
+}
+
+.btn:hover::before {
   transform: skewX(30deg) translate(150%, -50%);
   transition-delay: 0.1s;
- }
- 
- .btn:active {
-  transform: scale(0.9);
- }
- 
+}
 
- /**FOOTER**/
- .footer {
+.btn:active {
+  transform: scale(0.9);
+}
+
+/**FOOTER**/
+.footer {
   background-color: #0d3b66;
   color: #fff;
   padding: 40px 20px;
@@ -171,7 +169,7 @@ body {
 
 /* Contenedor del footer */
 .footer-container {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -185,18 +183,18 @@ body {
 /* Títulos de las secciones del footer */
 .footer-section h3 {
   margin-bottom: 15px;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 /* Enlaces dentro del footer */
 .footer-links {
   list-style: none;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .footer-links li {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .footer-links a {
@@ -210,8 +208,8 @@ body {
 
 /* Estilo para los iconos de redes sociales */
 .social-links {
-  display: flex; 
-  gap: 10px; 
+  display: flex;
+  gap: 10px;
 }
 
 .social-links a {
@@ -225,8 +223,8 @@ body {
 
 /* Estilo para el pie de página */
 .footer-bottom {
-  text-align: center; 
-  margin-top: 20px;  
+  text-align: center;
+  margin-top: 20px;
   border-top: 1px solid #1b1e32;
   padding-top: 10px;
 }
